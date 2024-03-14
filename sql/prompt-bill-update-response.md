@@ -1,15 +1,19 @@
-> ChatGPT Share Link: https://chat.openai.com/share/178a0bd2-0590-4a07-965d-cff01eb3aeba
+> ChatGPT Share Link: https://chat.openai.com/share/b0e9cc39-6c41-4b7a-bf5f-f0d9984950ae
 
 ```sql
-UPDATE bill b
+-- Assuming you have set up triggers or application logic to ensure data consistency, here's a solution using a single update statement
+
+UPDATE bill b 
 LEFT JOIN (
-    SELECT bill_id, SUM(amount) AS total_paid
-    FROM receipt
-    GROUP BY bill_id
-) r ON b.id = r.bill_id
-SET b.status = CASE
-    WHEN r.total_paid IS NULL THEN 'UNPAID'
-    WHEN r.total_paid < b.amount THEN 'PARTIAL'
-    WHEN r.total_paid >= b.amount THEN 'PAID'
+    SELECT 
+        r.bill_id, 
+        SUM(r.amount) AS paid_amount
+    FROM receipt r
+    GROUP BY r.bill_id
+) AS payment_summary ON b.id = payment_summary.bill_id
+SET b.status = CASE 
+    WHEN payment_summary.paid_amount IS NULL THEN 'UNPAID'
+    WHEN payment_summary.paid_amount >= b.amount THEN 'PAID'
+    ELSE 'PARTIAL'
 END;
 ```
