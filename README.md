@@ -4,7 +4,7 @@ Sample code for [16x Prompt](https://prompt.16x.engineer/).
 
 ## Next.js
 
-[emoji-todo](/emoji-todo) - A simple Next.js TODO app with emojis.
+[emoji-todo](/emoji-todo/) - A simple Next.js TODO app with emojis.
 
 ## SQL
 
