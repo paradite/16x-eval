@@ -1,6 +1,8 @@
 # 16x Eval
 
-Evaluation framework for [16x Prompt](https://prompt.16x.engineer/).
+16x Eval is an evaluation framework for LLMs and prompts on real world coding tasks in a variety of languages and frameworks. Initially the framework targets coding tasks in JavaScript, Python and SQL.
+
+16x Eval is built by [16x Prompt](https://prompt.16x.engineer/).
 
 ## Projects
 
@@ -15,3 +17,7 @@ Evaluation framework for [16x Prompt](https://prompt.16x.engineer/).
 ### Python
 
 [python-script](/projects/python-script/) - Python script code snippets.
+
+## Eval
+
+TODO
