@@ -1,17 +1,17 @@
-# 16x Prompt Sample Code
+# 16x Eval
 
-Sample code for [16x Prompt](https://prompt.16x.engineer/).
+Evaluation framework for [16x Prompt](https://prompt.16x.engineer/).
 
-Gold output for evaluation.
+## Projects
 
-## Next.js
+### Next.js
 
-[emoji-todo](/emoji-todo/) - A simple Next.js TODO app with emojis.
+[emoji-todo](/projects/emoji-todo/) - A simple Next.js TODO app with emojis.
 
-## SQL
+### SQL
 
-[sql](/sql/) - SQL code snippets.
+[sql](/projects/sql/) - SQL code snippets.
 
-## Python
+### Python
 
-[python-script](/python-script/) - Python script code snippets.
+[python-script](/projects/python-script/) - Python script code snippets.
