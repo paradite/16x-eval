@@ -1,0 +1,16 @@
+{
+  "name": "eval",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "watch": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.3",
+    "vitest": "^1.4.0"
+  }
+}
