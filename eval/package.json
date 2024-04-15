@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest run",
+    "eval": "vitest run --dir run",
     "watch": "vitest"
   },
   "author": "",
