@@ -1,0 +1,1 @@
+Modify the python script to include months without sales in output csv.
