@@ -1,0 +1,1 @@
+git apply patch.diff -v --directory=projects/emoji-todo/code/app
